@@ -8,9 +8,10 @@
   ],
 "routes": [
     { "src": "/api/(.*)", "dest": "server.js" },
-    { "src": "/", "dest": "/public/gate.html" }, // <<< diarahkan ke gate.html
+    { "src": "/", "dest": "/public/gate.html" }, 
     { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
+
 
 
