@@ -7,20 +7,21 @@
     }
   ],
   "routes": [
-    // 1. Rute API
+  
     {
       "src": "/api/(.*)",
       "dest": "server.js"
     },
-    // 2. Rute ROOT: Mengarahkan '/' ke index.html
+   
     {
       "src": "/",
       "dest": "/public/index.html" 
     },
-    // 3. Rute STATIS: Menangani semua file lain di /public/
+ 
     {
       "src": "/(.*)",
       "dest": "/public/$1"
     }
   ]
 }
+
